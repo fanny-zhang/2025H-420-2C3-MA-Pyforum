@@ -1,36 +1,31 @@
-# Reddit Maison
+# Projet PyForum
 
-Répartition des étudiants: créer des groupes (identifiés par des chiffres) de 5 étudiants, chacun ayant un rôle.
-Un dépôt Git pour chaque groupe d'étudiants.
+Bienvenue dans votre projet de programmation Python pour les prochaines semaines ! Dans ce projet, vous allez développer une application inspiré de Reddit appelée **PyForum**, qui sera un forum en ligne où les utilisateurs peuvent créer des discussions, poster des contenus, interagir via des commentaires, et gérer des forums. Voici un aperçu des fonctionnalités de l'application et des tâches à accomplir.
 
-## Question pour Catherine
+## Fonctionnalités de PyForum :
 
-- Équipe de 5 projet complet ou 5 équipes et un seul projet?
+### 1. Création de Forums
+Les utilisateurs pourront créer des forums sur des sujets variés. Chaque forum aura un modérateur désigné, qui aura des droits supplémentaires pour gérer les publications et les commentaires. Les utilisateurs pourront se joindre aux forums sur les sujets qui les intéressent.
 
-## Semaine 1: UML
+### 2. Création de publications et commentaires
+Les utilisateurs pourront ajouter des publications dans les forums, et d'autres utilisateurs pourront commenter ces publications. Chaque commentaire ou publication pourra être **voté positivement** par les autres utilisateurs. 
 
-- Explication des grandes lignes d'UML (environ 1-2h)?
-- Exercice 1: Fournir un texte détaillé sur les exigences de l'application, semblables à des exigences métiers de haut niveau.
-  Demander aux étudiants de créer des diagrammes de use case, de séquences, d'activité et de classes (et leurs relations).
-  Un corrigé peut être fourni ou omis selon la préférence.
-- Exercice 2: Implémenter certaines classes selon la lettre attribuée à chaque étudiant.
+### 3. Les types d'utilisateurs
+- **Utilisateurs Standards** : Ils pourront créer des forums et joindre des forums existants, créer des publications et ajouter des commentaires sur les publications. Ils pourront également voter positivement les publications et les commentaires des autres utilisateurs.
+- **Modérateurs** : Les modérateurs auront des droits supplémentaires, comme la possibilité de supprimer des publications ou des commentaires dans le forum qu'ils modèrent.  
+- **Administrateurs Système** : Ils auront un accès complet au système, permettant de gérer la base de données, supprimer des utilisateurs ou des forums, et effectuer des sauvegardes ou restaurations de la base de données.
 
-## Semaine 2: Git
+### 4. Gestion des notifications
+Les utilisateurs pourront définir leurs préférences de notifications. Par exemple, un utilisateur pourra être notifié lorsqu'un autre utilisateur vote pour l’un de ses posts ou commentaires.
 
-- Explication des grandes lignes de Git
-- Exercices en groupe: réaliser une série de push, pull, commit, diff, branche, etc., puis résoudre et expliquer les conflits.
-- Exercices individuels:
-    - pour chaque dépôt (chaque groupe d'étudiants), pousser le code UML et fusionner le tout. Fournir une copie de référence si nécessaire. Ensuite, pour chaque rôle, ajouter des fonctionnalités et faire collaborer toute l'équipe.
+### 5. Clavardage entre Utilisateurs
+Une fonctionnalité de **clavardage** permettra aux utilisateurs de discuter entre eux en privé.
 
-## Semaine 3 et 4 Fichier texte et JSON
+### 6. Base de données
+La base de données de PyForum sera simplifiée et stockée sous forme de **fichiers JSON**. Vous devrez manipuler ces fichiers pour enregistrer, mettre à jour, et récupérer les informations nécessaires au bon fonctionnement de l’application.
 
-- Post et config en JSON (ou CSV)
+## Collaboration en Équipe :
+Vous travaillerez en équipe pour développer l’application. L'intégration de votre travail se fera via **Git**, et chaque membre de l'équipe devra contribuer à différentes parties du projet. Les tâches à effectuer à chaque semaine vous seront communiquées par les professeurs.
 
-## Semaine 5 et 6 Interface graphique
-
-- Utilisation de tkinter pour créer une interface graphique
-
-## Extra
-
-- REXG pour faire une recherche parmi les posts
-
+## Évolution du projet :
+Le projet évoluera au fil des semaines et des **nouvelles notions enseignées dans le cours**. Chaque nouvelle fonctionnalité sera ajoutée progressivement, vous permettant de mettre en pratique les concepts appris.
