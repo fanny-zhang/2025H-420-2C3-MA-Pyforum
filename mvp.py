@@ -71,7 +71,6 @@ class Forum():
     def supprimer_post(self, post_id) -> None:
         pass
 
-    
 
 # class Chat():
 #     pass
