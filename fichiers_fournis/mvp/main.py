@@ -15,7 +15,8 @@ def main():
 
     while True:
         afficher_menu()
-
+        utilisateurs = []
+        forums = []
         # Demander à l'utilisateur de choisir une option
         choix = input("Choisissez une option (1-6): ")
 

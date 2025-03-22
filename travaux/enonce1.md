@@ -20,6 +20,7 @@ Vous devrez créer les classes et les méthodes nécessaires pour ces cas d'util
 
 ### 1. Création d'un Utilisateur
 Un utilisateur pourra s'inscrire en créant un compte. Chaque utilisateur doit contenir :
+- Un identifiant unique
 - Un nom d'utilisateur
 - Une adresse email
 - Un mot de passe (dans cette première phase, vous pouvez ignorer la gestion sécurisée des mots de passe)
@@ -37,14 +38,14 @@ L'utilisateur pourra créer une publication dans un forum. Chaque publication do
 - Un identifiant unique
 - Un titre
 - Un contenu
-- Un auteur 
+- L'identifiant de l'auteur 
 - L'identifiant du forum auquel elle appartient
 - Une liste de commentaires (qui est initialisée à une liste vide)
 
 ### 4. Ajout d'un commentaire
 L'utilisateur pourra ajouter un commentaire à une publication. Chaque commentaire doit contenir :
 - Un identifiant unique
-- Un auteur (l'utilisateur courant)
+- L'identifiant de l'auteur
 - Le contenu du commentaire
 - L'identifiant de la publication à laquel il appartient
 
