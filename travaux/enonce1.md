@@ -37,14 +37,14 @@ L'utilisateur pourra créer une publication dans un forum. Chaque publication do
 - Un identifiant unique
 - Un titre
 - Un contenu
-- Un auteur 
+- L'identifiant de l'auteur 
 - L'identifiant du forum auquel elle appartient
 - Une liste de commentaires (qui est initialisée à une liste vide)
 
 ### 4. Ajout d'un commentaire
 L'utilisateur pourra ajouter un commentaire à une publication. Chaque commentaire doit contenir :
 - Un identifiant unique
-- Un auteur (l'utilisateur courant)
+- L'identifiant de l'auteur
 - Le contenu du commentaire
 - L'identifiant de la publication à laquel il appartient
 
