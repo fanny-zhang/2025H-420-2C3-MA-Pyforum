@@ -1,6 +1,6 @@
 # Diagramme d'activité
 
-Créer un publication
+Créer une publication
 
 ```mermaid
 graph TD
