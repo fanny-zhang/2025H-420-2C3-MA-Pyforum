@@ -1,7 +1,7 @@
 class BD:
     def __init__(self):
         print("Base de données initialisée.")
-    
+
     @staticmethod
     def sauvegarder_utilisateur(utilisateur):
         """Simule la sauvegarde d'un utilisateur dans la base de données."""
@@ -10,7 +10,7 @@ class BD:
     def sauvegarder_forum(forum):
         """Simule la sauvegarde d'un forum dans la base de données."""
         print(f"[Simulé] Sauvegarde du forum: {forum.nom}")
-    
+
     @staticmethod
     def sauvegarder_publication(forum_id, publication):
         """Simule la sauvegarde d'une publication dans un forum."""
