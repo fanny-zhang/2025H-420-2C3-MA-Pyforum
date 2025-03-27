@@ -97,5 +97,6 @@ professeurs.
 
 Voici quelques liens vers les consignes et guides pour vous aider à démarrer :
 
-- [Installation de PyForum](./consignes/installation.md)
-- [Tests unitaires](./consignes/tests.md)
+- [Installation de PyForum](./installation.md)
+- [Travail no 1 : MVP](./travaux/01_MVP/01_Enonce.md)
+- [Tests unitaires](./tests.md)
