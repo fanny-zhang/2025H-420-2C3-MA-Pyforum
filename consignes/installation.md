@@ -13,10 +13,10 @@ Ceci créera un dossier `2025H-420-2C3-MA-Pyforum` dans le répertoire courant.
 
 ## Créer un environnement virtuel
 
-Pour créer un environnement virtuel, vous pouvez utiliser la commande suivante :
+Pour créer un environnement virtuel sur Windows, vous pouvez utiliser la commande suivante :
 
 ```bash
-python -m venv .venv
+py -m venv .venv
 ```
 ou le créer depuis VSCode directement.
 
@@ -30,9 +30,13 @@ suivante sur Windows :
 
 ## Installer les dépendances de développement
 
-Pour installer les dépendances de développement, un fois votre environnement
- virtuel activé, vous pouvez utiliser la commande suivante :
+Pour installer les dépendances de développement, une fois votre environnement
+virtuel activé, vous pouvez utiliser la commande suivante :
 
 ```bash
-pip install -r requirements-dev.txt
+python -m pip install -r requirements-dev.txt
 ```
+
+Cette commande appelle l'interpréteur Python de l'environnement virtuel pour
+lancer le module `pip` qui installera les dépendances listées dans le fichier
+`requirements-dev.txt`.

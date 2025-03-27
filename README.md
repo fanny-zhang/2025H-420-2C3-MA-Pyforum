@@ -13,7 +13,7 @@ Archambault-B.
 
 Ce dépôt est divisé en trois sections principales :
 
-- **Consignes** : Contient une présentation globale du projet et les
+- **Consignes** : Contient une [présentation globale](./consignes/README.md) du projet et les
   instructions pour chaque étape du projet.
 - **src/pyforum** : Le code source de l'application PyForum. Vous devrez
   développer votre application dans ce dossier.

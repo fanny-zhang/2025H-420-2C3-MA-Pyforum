@@ -19,6 +19,16 @@ qui comprend les fonctionnalités de base suivantes :
   - Ajouter un commentaire à une publication
   - Joindre un forum
 
+## Étape 1 : Diagramme UML
+
+
+
+### Diagramme de cas d'utilisation
+
+Écrire le diagramme de cas d'utilisation pour les fonctionnalités de base du
+
+
+
 Vous devrez créer les classes et les méthodes nécessaires pour ces cas
 d'utilisation, en respectant les exigences suivantes :
 

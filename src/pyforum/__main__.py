@@ -1,6 +1,7 @@
 # Importation des classes nécessaires
 from time import sleep
 
+
 def afficher_menu():
     """Affiche les options du menu."""
     print("\n---- Menu ----")
@@ -10,6 +11,7 @@ def afficher_menu():
     print("4. Ajouter un commentaire à une publication")
     print("5. Joindre un forum")
     print("6. Quitter")
+
 
 def main():
 
@@ -59,6 +61,7 @@ def main():
             print("Option invalide. Veuillez essayer à nouveau.")
 
         sleep(2)  # Pause de 2 secondes pour rendre l'interface plus agréable
+
 
 if __name__ == "__main__":
     main()
