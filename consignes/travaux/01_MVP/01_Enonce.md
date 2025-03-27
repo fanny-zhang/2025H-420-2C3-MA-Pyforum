@@ -112,6 +112,8 @@ Vous devez commencer par créer des diagramme UML pour modéliser le MVP. Le
 fichier [02_Mermaid.md](./02_Mermaid.md) contient une introduction à la syntaxe
 Mermaid pour créer des diagrammes UML.
 
+Créez les diagrammes dans le fichier `src/pyforum/UML/mvp.md`.
+
 #### Diagramme de cas d'utilisation
 
 Créer un diagramme de cas d'utilisation pour l'utilisateur en fonction
