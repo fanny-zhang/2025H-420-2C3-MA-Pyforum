@@ -19,9 +19,9 @@ La documentation de Mermaid contient plusieurs exemples de diagrammes UML que
 vous pouvez utiliser pour vos projets :
 
 - [Diagramme d'activité](https://mermaid-js.github.io/mermaid/#/flowchart).
-- [Diagramme de séquence](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-- [Diagramme de classes](https://mermaid-js.github.io/mermaid/#/classDiagram)
-- [Diagramme de cas d'utilisation](https://mermaid-js.github.io/mermaid/#/flowchart)
+- [Diagramme de séquence](https://mermaid-js.github.io/mermaid/#/sequenceDiagram).
+- [Diagramme de classes](https://mermaid-js.github.io/mermaid/#/classDiagram).
+- [Diagramme de cas d'utilisation](https://mermaid-js.github.io/mermaid/#/flowchart).
   Dans ce cas, il s'agit en fait de diagrammes de flux. Utiliser l'option LR
   pour obtenir un diagramme horizontal. Vous pouvez utiliser l'emoji silhouette (👤)
   pour représenter les acteurs.

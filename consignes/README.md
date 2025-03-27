@@ -84,7 +84,7 @@ améliorer l'expérience utilisateur.
 
 ## Collaboration en équipe
 
-Vous travaillerez en équipe **de 4** pour développer l’application. L'intégration de
+Vous travaillerez en équipe **de 2** pour développer l’application. L'intégration de
 votre travail se fera via **Git** et chaque membre de l'équipe devra
 contribuer à différentes parties du projet.
 

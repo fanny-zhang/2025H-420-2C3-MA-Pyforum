@@ -1,83 +1,70 @@
-from datetime import date
-
-### Écrire une REPL ###
-
-
-class IUser():
-    pass
+# Importation des classes nécessaires
+from time import sleep
+from pyforum.bd import BD
 
 
-# class Moderator(IUser):
-#     pass
+def afficher_menu():
+    """Affiche les options du menu."""
+    print("\n---- Menu ----")
+    print("1. Créer un utilisateur")
+    print("2. Créer un forum")
+    print("3. Créer une publication")
+    print("4. Ajouter un commentaire à une publication")
+    print("5. Joindre un forum")
+    print("6. Quitter")
 
 
-class User(IUser):
-    pass
+def main():
 
+    while True:
+        afficher_menu()
+        utilisateurs = []
+        forums = []
+        # Demander à l'utilisateur de choisir une option
+        choix = input("Choisissez une option (1-6): ")
 
-# class IHasVote():
-#     pass
+        if choix == '1':
+            # Créer un utilisateur
+            print("\nCréation d'un utilisateur...")
+            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
+            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
+            # Voici un exemple trivial de création d'un utilisateur
+            username = input("Entrez le nom d'utilisateur: ")
+            utilisateur = {"username": username}  # Remplacer cette ligne par votre logique
+            BD.sauvegarder_utilisateur(utilisateur)
+            utilisateurs.append(utilisateur)
 
-# class Tag():
-#     pass
+        elif choix == '2':
+            # Créer un forum
+            print("\nCréation d'un forum...")
+            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
+            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
+        elif choix == '3':
+            # Créer une publication
+            print("\nCréation d'une publication...")
+            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
+            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
-class Post():
-    def __init__(self, author: IUser, date: date, content: str):
-        self.author = author
-        self.date = date
-        self.content = content
+        elif choix == '4':
+            # Ajouter un commentaire
+            print("\nAjouter un commentaire...")
+            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
+            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
-    def to_dict(self):
-        return {
-            "author": self.author,
-            "date": self.date,
-            "content": self.content
-        }
+        elif choix == '5':
+            # Joindre un forum
+            print("\nJoindre un forum...")
+            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
+            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
+        elif choix == '6':
+            # Quitter le programme
+            print("\nMerci d'avoir utilisé PyForum. À bientôt!")
+            break
 
-class BD():
-    def enregister_utilisateur(self, user: IUser):
-        pass
+        else:
+            print("Option invalide. Veuillez essayer à nouveau.")
 
-    def enregister_post(self, post: Post):
-        pass
-
-    def enregister_comment(self, comment: Comment):
-        pass
-
-
-class Comment():
-    def __init__(self, author: IUser, date: date, content: str):
-        self.author = author
-        self.date = date
-        self.content = content
-
-
-# class ForumDescription():
-#     pass
-
-
-class Forum():
-    def __init__(self, name: str, mods: list[Moderator]):
-        self.name = name
-        self.posts: list[Post] = []
-        self.mods = mods
-
-    def ajouter_post(self, *posts_info) -> Post:
-        pass
-
-    def supprimer_post(self, post_id) -> None:
-        pass
-
-
-# class Chat():
-#     pass
-
-
-# class Notification():
-#     """
-#     Joindre et suivre
-#     """
-#     pass
+        sleep(2)  # Pause de 2 secondes pour rendre l'interface plus agréable

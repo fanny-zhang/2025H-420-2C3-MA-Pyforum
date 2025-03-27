@@ -19,22 +19,13 @@ qui comprend les fonctionnalités de base suivantes :
   - Ajouter un commentaire à une publication
   - Joindre un forum
 
-## Étape 1 : Diagramme UML
-
-
-
-### Diagramme de cas d'utilisation
-
-Écrire le diagramme de cas d'utilisation pour les fonctionnalités de base du
-
-
-
-Vous devrez créer les classes et les méthodes nécessaires pour ces cas
-d'utilisation, en respectant les exigences suivantes :
-
 ## Fonctionnalités à développer
 
-### 1. Création d'un Utilisateur
+Cette section présente les fonctionnalités de base à développer pour le MVP de
+PyForum. La section [À vous de jouer !](#à-vous-de-jouer) contient les
+instructions détaillées de ce que vous devez réaliser.
+
+### 1. Création d'un utilisateur
 
 Un utilisateur pourra s'inscrire en créant un compte. Chaque utilisateur doit
 contenir :
@@ -81,51 +72,25 @@ forum est rajouté a sa liste de forums.
 
 ## Classe BD
 
-Une classe **BD** (Base de Données) vous sera fournie (voir
-`fichiers_fournis/mvp/bd.py`) pour gérer l'enregistrement et la récupération
-des données dans des fichiers JSON. Cette classe ne contient pour l'instant que
-des méthodes "bidon", et qui seront remplacés par une implémentation logique
-dans les semaines à venir. Cette classe contiendra des méthodes pour :
+Une classe **BD** (Base de Données) vous sera fournie  pour gérer
+l'enregistrement et la récupération des données dans des fichiers JSON. Cette
+classe ne contient pour l'instant que des méthodes "bidon", et qui seront
+remplacés par une implémentation logique dans les semaines à venir. Cette
+classe contiendra des méthodes pour :
 
 - Sauvegarder un forum, une publication ou un commentaire
 - Charger un forum, une publication ou un commentaire
 - Gérer l'ajout des utilisateurs aux forums
 
-**Méthodes de la classe BD à utiliser :**
-- **`sauvegarder_forum(forum)`** : Sauvegarde les informations d'un forum.
-- **`sauvegarder_publication(forum_id, publication)`** : Sauvegarde une publication dans le forum correspondant (utilise l'ID du forum).
-- **`sauvegarder_commentaire(publication_id, commentaire)`** : Sauvegarde un commentaire dans une publication donnée (utilise l'ID de la publication).
-- **`sauvegarder_utilisateur(forum_id, utilisateur)`** : Sauvegarde l'inscription d'un utilisateur à un forum.
-- **`charger_forums()`** : Charge tous les forums depuis la base de données (fichiers JSON).
-- **`charger_publications(forum_id)`** : Charge toutes les publications d'un forum donné.
-- **`charger_commentaires(publication_id)`** : Charge tous les commentaires d'une publication donnée.
-- **`charger_utilisateurs(forum_id)`** : Charge tous les utilisateurs inscrits à un forum donné.
-
-### Exemple d'utilisation des méthodes BD dans les cas d'utilisation
-
-- **Créer un utilisateur :**
-  - L'utilisateur entre un nom d'utilisateur, une adresse email et un mot de passe.
-  - La méthode **`sauvegarder_utilisateur(utilisateur)`** est appelée pour enregistrer l'utilisateur dans la base de données.
-
-- **Créer un forum :**
-  - L'utilisateur entre un nom et une description pour le forum.
-  - La méthode **`sauvegarder_forum(forum)`** est appelée pour enregistrer le forum dans un fichier JSON.
-
-- **Créer une publication :**
-  - L'utilisateur entre un titre et un contenu pour la publication.
-  - La méthode **`sauvegarder_publication(forum_id, publication)`** est appelée pour enregistrer la publication dans le forum spécifié.
-
-- **Ajouter un commentaire :**
-  - L'utilisateur entre le contenu du commentaire.
-  - La méthode **`sauvegarder_commentaire(publication_id, commentaire)`** est appelée pour enregistrer le commentaire dans la publication correspondante.
-
-- **Joindre un forum :**
-  - L'utilisateur entre l'ID du forum qu'il souhaite rejoindre.
-  - La méthode **`sauvegarder_utilisateur(forum_id, utilisateur)`** est appelée pour ajouter l'utilisateur à la liste des membres du forum.
+Les différentes méthodes de la classe BD sont documentées dans le fichier
+`src/pyforum/bd.py`. La plupart acceptent des objets de type `Forum`,
+`Utilisateur`, etc. en paramètre. Dans le cadre du MVP, ces objets
+doivent surcharger la méthode `__str__` pour permettre l'affichage des objets
+dans le terminal.
 
 ## Fichier main.py - Description et utilisation
 
-Le fichier main.py vous est founir (`fichiers_fournis/mvp/main.py`) représente
+Le fichier `__main__.py` représente
 l'interface principale de l'application PyForum, permettant de simuler le
 fonctionnement de base de l'application à travers un menu interactif dans le
 terminal. Ce fichier contient une boucle principale qui affiche un menu et
@@ -139,9 +104,41 @@ classes et méthodes que vous avez créés.
   attributs de classe, qui enregistre le dernier identifiant unique utilisé, et
   qui s'incrémente à chaque création.
 
-## Exigences techniques
+## À vous de jouer !
 
-- Utilisez la **programmation orientée objet** pour modéliser les utilisateurs,
-  forums, publications, commentaires, et utilisateurs comme des classes avec
-  des attributs et des méthodes appropriées.
-- Organisez votre code en plusieurs fichiers Python si nécessaire.
+## Étape 1 : Diagramme UML
+
+Vous devez commencer par créer des diagramme UML pour modéliser le MVP. Le
+fichier [02_Mermaid.md](./02_Mermaid.md) contient une introduction à la syntaxe
+Mermaid pour créer des diagrammes UML.
+
+#### Diagramme de cas d'utilisation
+
+Créer un diagramme de cas d'utilisation pour l'utilisateur en fonction
+de la description donnée à la section [Objectifs](#objectifs).
+
+#### Diagramme de classes
+
+En fonction de la description à la section [Fonctionnalités à développer](#fonctionnalités-à-développer),
+créez un diagramme de classes pour modéliser les classes et les relations entre
+elles. Les classes à modéliser sont :
+
+- Utilisateur
+- Forum
+- Publication
+- Commentaire
+
+N'oubliez pas de modéliser les attributs et les méthodes de chaque classe,
+ainsi que les relations d'agrégation et de composition.
+
+## Étape 2 : Implémentation des classes
+
+Créez les classes `Utilisateur`, `Forum`, `Publication`, et `Commentaire` dans
+le dossier `src/pyforum` en fonction du diagramme de classes que vous avez
+créé. Faite un fichier par classe.
+
+## Étape 3 : Compléter le fichier MVP
+
+Complétez le fichier `src/pyforum/mvp.py` pour permettre à l'utilisateur
+d'interagir avec l'application. La partie à compléter est indiquée par des
+commentaires `TODO` dans la fonction `main()`.
