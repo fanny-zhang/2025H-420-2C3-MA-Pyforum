@@ -144,3 +144,7 @@ créé. Faite un fichier par classe.
 Complétez le fichier `src/pyforum/mvp.py` pour permettre à l'utilisateur
 d'interagir avec l'application. La partie à compléter est indiquée par des
 commentaires `TODO` dans la fonction `main()`.
+
+
+> [!NOTE]
+> Vous n'avez pas besoin d'écrire de tests unitaires pour le MVP.
