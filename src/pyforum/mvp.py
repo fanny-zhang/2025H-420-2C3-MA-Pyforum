@@ -1,5 +1,7 @@
 # Importation des classes nécessaires
 from time import sleep
+from pyforum.bd import BD
+
 
 def afficher_menu():
     """Affiche les options du menu."""
@@ -10,6 +12,7 @@ def afficher_menu():
     print("4. Ajouter un commentaire à une publication")
     print("5. Joindre un forum")
     print("6. Quitter")
+
 
 def main():
 
@@ -25,6 +28,12 @@ def main():
             print("\nCréation d'un utilisateur...")
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
             # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
+
+            # Voici un exemple trivial de création d'un utilisateur
+            username = input("Entrez le nom d'utilisateur: ")
+            utilisateur = {"username": username}  # Remplacer cette ligne par votre logique
+            BD.sauvegarder_utilisateur(utilisateur)
+            utilisateurs.append(utilisateur)
 
         elif choix == '2':
             # Créer un forum
@@ -59,6 +68,3 @@ def main():
             print("Option invalide. Veuillez essayer à nouveau.")
 
         sleep(2)  # Pause de 2 secondes pour rendre l'interface plus agréable
-
-if __name__ == "__main__":
-    main()
