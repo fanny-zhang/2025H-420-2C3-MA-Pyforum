@@ -79,14 +79,16 @@ remplacés par une implémentation logique dans les semaines à venir. Cette
 classe contiendra des méthodes pour :
 
 - Sauvegarder un forum, une publication ou un commentaire
-- Charger un forum, une publication ou un commentaire
 - Gérer l'ajout des utilisateurs aux forums
+- Récupérer des objets enregistrés à partir d'un attribut
 
 Les différentes méthodes de la classe BD sont documentées dans le fichier
 `src/pyforum/bd.py`. La plupart acceptent des objets de type `Forum`,
 `Utilisateur`, etc. en paramètre. Dans le cadre du MVP, ces objets
 doivent surcharger la méthode `__str__` pour permettre l'affichage des objets
-dans le terminal.
+dans le terminal. 
+
+L'instance unique de la classe BD est créée dans le fichier `mvp.py` et doit être transmise explicitement à chaque objet (Utilisateur, Forum, Publication, Commentaire, etc.) lors de leur création. Cette approche, appelée injection de dépendance, permet de centraliser la gestion des données et de garantir que tous les objets partagent la même instance de la base de données.
 
 ## Fichier main.py - Description et utilisation
 
@@ -138,6 +140,10 @@ ainsi que les relations d'agrégation et de composition.
 Créez les classes `Utilisateur`, `Forum`, `Publication`, et `Commentaire` dans
 le dossier `src/pyforum` en fonction du diagramme de classes que vous avez
 créé. Faite un fichier par classe.
+
+Astuces:
+- N'oubliez pas d'implémenter la méthode `__str__` pour chacune des classes pour permettre leur affichage à l'écran.
+- Assurez-vous de faire les appels aux méthodes de la BD aux endroits appropriés.
 
 ## Étape 3 : Compléter le fichier MVP
 
