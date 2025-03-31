@@ -20,9 +20,9 @@
 
 
 Vue générale des fonctionnalités:
-MVP (V1) : Classes Utilisateur, Forum, Commentaire et Publication de base
-V2: Vote, connexion (login), tags, rôles (admin et modérateur)
-V3: Implantation de la BD (écriture dans des fichiers) = Sommatif 
-V4: GUI = TP2
-V5: TBD (GUI)
-V6: TBD (Exceptions et tests unitaires)
+- MVP (V1) : Classes Utilisateur, Forum, Commentaire et Publication de base
+- V2: Vote, connexion (login), tags, rôles (admin et modérateur)
+- V3: Implantation de la BD (écriture dans des fichiers) = Sommatif 
+- V4: GUI = TP2
+- V5: TBD (GUI)
+- V6: TBD (Exceptions et tests unitaires)
