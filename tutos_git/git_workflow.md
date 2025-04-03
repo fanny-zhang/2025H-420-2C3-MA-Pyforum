@@ -7,13 +7,18 @@ Vous allez créer un dépôt Git basé sur ce projet tout en conservant la possi
 
 ## 1. Créer votre propre dépôt Git
 ### Option 1 : Travailler sur GitHub
-1. **Forkez** le dépôt du professeur sur GitHub.
-2. **Clonez votre fork** sur votre machine :
-   ```sh
-   git clone <URL_DU_REPO_ETUDIANT>
-   cd <NOM_DU_REPO>
-   ```
-
+1. **Créez un Fork** du dépôt du professeur sur GitHub.
+- Naviguez sur la page du Github du professeur, et sélectionnez *Fork* -> *Create New Fork*.
+![](images/1.png)
+- Modifiez le nom du projet si vous le désirez, puis cliquez sur *Create fork*.
+![](images/2.png)
+2. **Configurez votre dépôt** sur votre machine sur Visual Studio Code:
+- Ouvrez Visual Studio Code, puis ouvrez la vue git à l'aide du 3e icône dans le menu à gauche, puis sélectionnez *Clone repository*.
+![](images/3.png)
+- Dans la barre d'en haut, sélectionnez *Clone from Github*
+![](images/4.png)
+- Sélectionnez le dépôt que vous venez de créer dans la liste déroulante.
+![](images/5.png)
 ### Option 2 : Travailler sur GitLab
 1. **Créez un nouveau dépôt vide** sur GitLab.
 2. **Clonez le dépôt** sur votre machine :
