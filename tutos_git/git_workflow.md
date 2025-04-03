@@ -1,12 +1,11 @@
 # Workflow Git suggéré
 
 ## Objectif
-Vous allez créer un dépôt Git basé sur ce projet tout en conservant la possibilité de récupérer les mises à jour des nouveaux énoncés. Vous avez le choix de travailler sur Gitlab ou sur Github.
+Vous allez créer un dépôt Git basé sur ce projet tout en conservant la possibilité de récupérer les mises à jour des nouveaux énoncés.
 
 ---
 
-## 1. Créer votre propre dépôt Git
-### Option 1 : Travailler sur GitHub
+## 1. Créer votre propre dépôt sur GitHub
 1. **Créez un Fork** du dépôt du professeur sur GitHub.
 - Naviguez sur la page du Github du professeur, et sélectionnez *Fork* -> *Create New Fork*.
 ![](images/1.png)
@@ -19,14 +18,6 @@ Vous allez créer un dépôt Git basé sur ce projet tout en conservant la possi
 ![](images/4.png)
 - Sélectionnez le dépôt que vous venez de créer dans la liste déroulante.
 ![](images/5.png)
-### Option 2 : Travailler sur GitLab
-1. **Créez un nouveau dépôt vide** sur GitLab.
-2. **Clonez le dépôt** sur votre machine :
-   ```sh
-   git clone <URL_DU_REPO_GITLAB>
-   cd <NOM_DU_REPO>
-   ```
-3. **Ajoutez le dépôt du professeur comme remote** (voir section suivante).
 
 ---
 
