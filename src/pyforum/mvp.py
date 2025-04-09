@@ -1,7 +1,6 @@
 # Importation des classes nécessaires
 from time import sleep
 from pyforum.bd import BD
-from pyforum.utilisateur import Utilisateur
 
 
 def afficher_menu():
