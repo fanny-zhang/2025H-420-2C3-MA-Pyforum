@@ -1,6 +1,7 @@
 # Importation des classes nécessaires
 from time import sleep
 from pyforum.bd import BD
+from pyforum.utilisateur import Utilisateur
 
 
 def afficher_menu():
@@ -16,10 +17,12 @@ def afficher_menu():
 
 def main():
 
+    # Initialisation de la base de données
+    db = BD()
+
     while True:
         afficher_menu()
-        utilisateurs = []
-        forums = []
+
         # Demander à l'utilisateur de choisir une option
         choix = input("Choisissez une option (1-6): ")
 
@@ -29,11 +32,14 @@ def main():
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
             # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
-            # Voici un exemple trivial de création d'un utilisateur
+            # Voici un exemple trivial de création d'un utilisateur. Vous devez le bonifier,
+            # car il ne prend en compte que le nom d'utilisateur.
             username = input("Entrez le nom d'utilisateur: ")
-            utilisateur = {"username": username}  # Remplacer cette ligne par votre logique
-            BD.sauvegarder_utilisateur(utilisateur)
-            utilisateurs.append(utilisateur)
+            utilisateur = {'username': username}
+
+            # Le **utilisateur est une syntaxe Python pour déballer un dictionnaire.
+            # C'est à dire que les clés du dictionnaire deviennent des arguments nommés.
+            db.creer_utilisateur(**utilisateur)
 
         elif choix == '2':
             # Créer un forum
@@ -67,4 +73,4 @@ def main():
         else:
             print("Option invalide. Veuillez essayer à nouveau.")
 
-        sleep(2)  # Pause de 2 secondes pour rendre l'interface plus agréable
+        sleep(1)  # Pause de 1 secondes pour rendre l'interface plus agréable
