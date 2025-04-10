@@ -28,13 +28,12 @@ def main():
         if choix == '1':
             # Créer un utilisateur
             print("\nCréation d'un utilisateur...")
-            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
-            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
 
             # Voici un exemple trivial de création d'un utilisateur. Vous devez le bonifier,
             # car il ne prend en compte que le nom d'utilisateur.
             username = input("Entrez le nom d'utilisateur: ")
             utilisateur = {'username': username}
+            # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
 
             # Le **utilisateur est une syntaxe Python pour déballer un dictionnaire.
             # C'est à dire que les clés du dictionnaire deviennent des arguments nommés.
@@ -44,25 +43,25 @@ def main():
             # Créer un forum
             print("\nCréation d'un forum...")
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
-            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
+            # TODO: Ajouter l'appel à la base de donnée pour créer le forum
 
         elif choix == '3':
             # Créer une publication
             print("\nCréation d'une publication...")
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
-            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
+            # TODO: Ajouter l'appel à la base de donnée pour créer la publication
 
         elif choix == '4':
             # Ajouter un commentaire
             print("\nAjouter un commentaire...")
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
-            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
+            # TODO: Ajouter l'appel à la base de donnée pour créer le commentaire
 
         elif choix == '5':
             # Joindre un forum
             print("\nJoindre un forum...")
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
-            # TODO: Ajouter les appels aux constructeurs ou autre méthodes de vos classes
+            # TODO: Ajouter les appels à la base de donnée pour ajouter l'utilisateur au forum
 
         elif choix == '6':
             # Quitter le programme

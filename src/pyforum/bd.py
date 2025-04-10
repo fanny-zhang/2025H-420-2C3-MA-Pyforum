@@ -44,24 +44,29 @@ class BD:
     def creer_publication(self, publication):
         #                       ^^^^^^^^^^^
         #                       Vous devez ajouter les autres paramètres requis
-        # TODO: Implanter la logique pour créer un forum
+        # TODO: Implanter la logique pour créer une publication
         pass
 
     def creer_commentaire(self, commentaire):
         #                       ^^^^^^^^^^^
         #                       Vous devez ajouter les autres paramètres requis
-        # TODO: Implanter la logique pour créer un forum
+        # TODO: Implanter la logique pour créer un commentaire
         pass
 
     def obtenir_forum_par_nom(self, nom_forum):
-        # TODO: Implanter la logique pour créer un forum
+        # TODO: Implanter la logique pour chercher un forum à partir de son nom
         pass
     
     def obtenir_publication_par_titre(self, titre_publication):
-        # TODO: Implanter la logique pour créer un forum
+        # TODO: Implanter la logique pour chercher une publication à partir de son titre
         pass
 
-     
+    def mettre_a_jour_forum(self, forum):
+        #                         ^^^^^^
+        #                         Vous devez ajouter les autres paramètres requis
+        # TODO: Implanter la logique pour mettre à jour le forum et retourner le forum mis à jour
+        pass
+
 
 
     
