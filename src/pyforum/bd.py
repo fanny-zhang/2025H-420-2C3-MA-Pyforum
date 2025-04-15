@@ -10,9 +10,9 @@ class BD:
         self.utilisateurs_forums = {}
         print("Base de données initialisée.")
     
-    def creer_utilisateur(self, username: str) -> Utilisateur:
+    def creer_utilisateur(self, username: str, email, mdp) -> Utilisateur:
         #                       ^^^^^^^^^^^^^^
-        #            # TODO:    Vous devez ajouter les autres paramètres requis
+        #            # TODO:    Vous devez ajouter les autres paramètres requis(oui)
 
         # Vérifier si l'utilisateur existe déjà
         if username in [u.username for u in self.utilisateurs]:
@@ -35,21 +35,21 @@ class BD:
             if u.username == nom_utilisateur:
                 return u
 
-    def creer_forum(self, nom):
+    def creer_forum(self, nom, description = ""):
         #                ^^^^^^
-        #                Vous devez ajouter les autres paramètres requis
+        #                Vous devez ajouter les autres paramètres requis(oui)
         # TODO: Implanter la logique pour créer un forum
         pass
 
-    def creer_publication(self, publication):
+    def creer_publication(self, publication, titre, contenu, id_auteur, id_forum):
         #                       ^^^^^^^^^^^
-        #                       Vous devez ajouter les autres paramètres requis
+        #                       Vous devez ajouter les autres paramètres requis(oui?)
         # TODO: Implanter la logique pour créer une publication
         pass
 
-    def creer_commentaire(self, commentaire):
+    def creer_commentaire(self, commentaire, id_auteur, contenu, id_publication):
         #                       ^^^^^^^^^^^
-        #                       Vous devez ajouter les autres paramètres requis
+        #                       Vous devez ajouter les autres paramètres requis(oui?)
         # TODO: Implanter la logique pour créer un commentaire
         pass
 
